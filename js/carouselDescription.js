@@ -32,7 +32,7 @@ $(document).ready(function() {
     // Actualizar el texto en la entrada.
     updateDescripciones(0);
 
-    // Este listener está correcto. Se activa cuando cambia el slide.
+    // Se activa cuando cambia el slide.
     carousel.on("slide.bs.carousel", function(event) {
         updateDescripciones(event.to);
     });
