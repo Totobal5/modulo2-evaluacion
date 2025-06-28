@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Totobal5/modulo2-evaluacion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Totobal5/modulo2-evaluacion/issues"
+  },
+  "homepage": "https://github.com/Totobal5/modulo2-evaluacion#readme",
+  "description": "",
+  "dependencies": {
+    "@types/jquery": "^3.5.32"
+  }
+}
