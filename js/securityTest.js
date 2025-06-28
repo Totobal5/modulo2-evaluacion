@@ -1,5 +1,5 @@
 $(function() {
-    // --- Lógica para el test de seguridad del modal ---
+    // Lógica para el test de seguridad del modal.
     $('#check-test-btn').on('click', function() {
         let score = 0;
         const resultsDiv = $('#test-results');
@@ -27,7 +27,7 @@ $(function() {
         
         resultsDiv.html(feedbackMessage);
     });   
-    
+
     // Limpiar el resultado del test cuando se cierra el modal
     $('#securityTestModal').on('hidden.bs.modal', function () {
         $('#test-results').html('');
