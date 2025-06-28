@@ -59,8 +59,8 @@
             </div>
         </section>
 
-        <!-- Newsletter -->
-        <section class="mt-5 bg-light rounded text-center"" >
+        <!-- Newsletter. -->
+        <section class="mt-5 bg-light rounded text-center">
             <div class="container">
                 <h2 class="mb-3">Suscríbete a nuestro Newsletter</h2>
                 <p class="lead text-muted mb-4">Recibe los mejores consejos de ciberseguridad directamente en tu correo.</p>
@@ -81,7 +81,88 @@
         
         </section>
 
+        <!-- Boton para abrir modal. -->
+        <section class="mt-5 text-center">
+            <h2 class="mb-3">¡Test de Seguridad!</h2>        
+            <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#security-test-modal">
+                <i class="bi bi-shield-check"></i> Iniciar Test de Seguridad
+            </button>
+        </section>
+
     </main>
+
+    <!-- Modal oculto. -->
+    <div class="modal fade" id="security-test-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Test Rápido de Seguridad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="test-form">
+                        <!-- Pregunta 1 -->
+                        <div class="mb-4">
+                            <p class="fw-bold">1. Recibes un email de tu "banco" pidiendo que verifiques tu clave en un enlace. ¿Qué haces?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1" id="q1a" value="incorrecto">
+                                <label class="form-check-label" for="q1a">Hago clic en el enlace e ingreso mi clave. Parece legítimo.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1" id="q1b" value="correcto">
+                                <label class="form-check-label" for="q1b">Borro el correo y, si tengo dudas, entro a la web del banco escribiendo la dirección yo mismo.</label>
+                            </div>
+                             <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1" id="q1c" value="incorrecto">
+                                <label class="form-check-label" for="q1c">Respondo el correo pidiendo más información.</label>
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 2 -->
+                        <div class="mb-4">
+                            <p class="fw-bold">2. ¿Cuál de estas es la mejor contraseña?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2" id="q2a" value="correcto">
+                                <label class="form-check-label" for="q2a">Tr@m$p0rt3-G@l@ct1c0#25</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2" id="q2b" value="incorrecto">
+                                <label class="form-check-label" for="q2b">12345678</label>
+                            </div>
+                             <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2" id="q2c" value="incorrecto">
+                                <label class="form-check-label" for="q2c">contraseña</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Pregunta 3 -->
+                        <div class="mb-4">
+                            <p class="fw-bold">3. ¿Es seguro instalar programas desde sitios de descarga no oficiales?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3" id="q3a" value="incorrecto">
+                                <label class="form-check-label" for="q3a">Sí, si mi antivirus no dice nada, no hay problema.</label>
+                            </div>
+                             <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3" id="q3b" value="incorrecto">
+                                <label class="form-check-label" for="q3b">A veces, si es un programa que realmente quiero.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3" id="q3c" value="correcto">
+                                <label class="form-check-label" for="q3c">No, siempre debo descargar software desde su página oficial.</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Div para mostrar resultados -->
+                        <div id="test-results" class="mt-4"></div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" id="check-test-btn" class="btn btn-primary">Verificar Respuestas</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
