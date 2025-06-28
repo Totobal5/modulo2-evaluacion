@@ -59,12 +59,26 @@
             </div>
         </section>
 
-        <!-- Formulario -->
-        <section class="mt-5">
-
-            
-
-
+        <!-- Newsletter -->
+        <section class="mt-5 bg-light rounded text-center"" >
+            <div class="container">
+                <h2 class="mb-3">Suscríbete a nuestro Newsletter</h2>
+                <p class="lead text-muted mb-4">Recibe los mejores consejos de ciberseguridad directamente en tu correo.</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <form id="newsletter-form" novalidate>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                                <input type="email" id="email-input" class="form-control form-control-lg" placeholder="Ingresa tu correo electrónico" required>
+                                <button class="btn btn-primary" type="submit">Suscribirme</button>
+                            </div>
+                            <!-- Para mensajes de validación -->
+                            <div id="form-feedback" class="mt-2"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
         </section>
 
     </main>
