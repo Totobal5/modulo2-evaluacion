@@ -2,7 +2,7 @@ $(function() {
     $("#newsletter-form").on("submit", function(event) {
         // Evitar que la pagina se recargue.
         event.preventDefault();
-        
+
         // Obtener elementos.
         const emailInput = $("#email-input");
         const feedbackDiv = $("#form-feedback");
